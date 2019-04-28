@@ -2,7 +2,6 @@ package com.example.springbooth2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -20,9 +19,6 @@ import org.slf4j.LoggerFactory;
 @EnableJpaRepositories("com.jos.dem.springboot.h2.repository")
 public class H2Application {
 
-  @Autowired
-  private PersonRepository personRepository;
-
   private Logger log = LoggerFactory.getLogger(this.getClass());
 
 	public static void main(String[] args) {
@@ -30,7 +26,7 @@ public class H2Application {
 	}
 
   @Bean
-  CommandLineRunner start(){
+  CommandLineRunner start(PersonRepository personRepository){
     return args -> {
       Person person  = new Person(1L, "josdem", "joseluis.delacruz@gmail.com");
       personRepository.save(person);
