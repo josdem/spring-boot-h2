@@ -1,4 +1,4 @@
-package com.jos.dem.springboot.h2;
+package com.jos.dem.springboot.h2.model;
 
 import javax.persistence.Id;
 import javax.persistence.Entity;
