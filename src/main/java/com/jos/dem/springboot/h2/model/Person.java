@@ -5,9 +5,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 
 @Entity
-public class Student {
+public class Person {
+
 	@Id
 	@GeneratedValue
 	private Long id;
 	private String nickname;
 	private String email;
+
+}
