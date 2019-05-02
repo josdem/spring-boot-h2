@@ -1,4 +1,4 @@
-package com.example.springbooth2;
+package com.jos.dem.springboot.h2;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
