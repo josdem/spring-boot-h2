@@ -1,4 +1,4 @@
-Spring Boot Server-sent Event
+Spring Boot H2
 ----------------------------------------
 
 This project shows how to integrate an [H2](https://www.h2database.com/html/main.html) in memory database in a Spring Webflux application.
